@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'gilroy-light';
+	src: url(/assets/fonts/Gilroy-Light.otf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'gilroy-bold';
+	src: url(/assets/fonts/Gilroy-ExtraBold.otf);
+	font-weight: 800;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'gilroy-light';
+}
+:root {
+	--orange-color: #ff9a41;
+	--blue-color: #0b243a;
+	--font-bold: bold;
+	--font-light: 400;
+}
+.font-bold {
+	font-family: 'gilroy-bold';
+}
+.color-headline {
+	color: var(--orange-color);
+}
+.primary-bg-color {
+	background-color: var(--orange-color);
+}
+.primary-border-color {
+	border: 1px solid var(--orange-color);
+}
+.primary-button {
+	background: var(--orange-color);
+	color: #ffffff;
+	font-weight: 800;
+	padding: 8px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px 0px rgba(36, 38, 114, 0.11);
+}
+.outline-button {
+	background: transparent;
+	color: var(--orange-color);
+	border: 1px solid var(--orange-color);
+	font-weight: 800;
+	padding: 8px 20px;
+	border-radius: 5px;
+}
+
+.list-item ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.single-feature-item {
+	background: #ffffff;
+	padding: 15px;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4),
+		0px 8px 24px -6px rgba(0, 0, 0, 0.16);
+	border-radius: 5px;
+}
+
+.automate-section,
+.performance-section {
+	background-color: #fbfcfd;
+}
+
+.business-reinvent {
+	background-color: #f5f7fa;
+}
+
+.newsletter-section {
+	background-image: url(/assets/images/signup-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.signup-form {
+	box-shadow: 0px 10px 28px 0px rgba(52, 99, 237, 0.15);
+}
+.signup-form input {
+	text-align: left;
+	border: 0;
+	border-radius: 5px 0 0 5px;
+	color: var(--orange-color);
+}
+.signup-form input::placeholder {
+	color: var(--orange-color);
+}
+
+.footer-copyright {
+	background-color: #030f25;
+}
+
+/* Responsive CSS */
+@media (min-width: 768px) {
+	.navbar-brand img {
+		width: 250px;
+	}
+}
